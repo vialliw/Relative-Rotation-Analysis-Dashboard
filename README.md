@@ -39,7 +39,7 @@
 
 ### Core Functionality
 
-✅ **Quantitative RRG Calculation**
+✅ **Quantitative RS-Ratio and RS-Momentum Calculation**
 - RS-Ratio (Relative Trend Strength)
 - RS-Momentum (Trend Acceleration)
 - 100-baseline normalization for consistent interpretation
