@@ -2,7 +2,9 @@
 
 Last updated: 2026-10-25 17:04 UTC
 
-This index summarizes the generated report artifacts for the Relative Rotation Analysis dashboard. The JSON file includes the system prompt and the weekly dataset available up to the date shown, while the Markdown files contain the analysis reports returned by different LLMs.
+This index summarizes the generated report artifacts for the Relative Rotation Analysis dashboard. 
+
+The JSON file includes the system prompt and the weekly dataset available up to the date shown, while the Markdown files contain the analysis reports returned by different LLMs.
 
 Total files: 4
 
