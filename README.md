@@ -484,7 +484,7 @@ This software is provided for educational and informational purposes only. It is
 - The open-source community
 
 **AI Development Partner:**
-This project was developed through iterative collaboration with ChatGPT, Gemini, Claude (Anthropic), showcasing the power of AI-augmented software engineering.
+This project was developed through iterative collaboration with ChatGPT, Gemini, Claude (Anthropic), and [Devin](https://devin.ai) (Cognition), showcasing the power of AI-augmented software engineering. Devin maintains the weekly RRG report series in [`report/`](report), the report index automation, and this README's workflow documentation.
 
 ---
 
