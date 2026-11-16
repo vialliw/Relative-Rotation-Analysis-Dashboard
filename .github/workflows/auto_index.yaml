@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'report/**'
-      - 'scripts/update_report_index.py'
+      - 'action_update_index.py'
   workflow_dispatch:
 
 jobs:

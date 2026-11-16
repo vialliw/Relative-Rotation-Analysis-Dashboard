@@ -25,9 +25,10 @@
 ## Weekly RRG Analysis Reports
 
 This repository hosts a weekly series of narrative RRG analysis reports in
-[`report/`](report), auto-indexed in [`REPORT_INDEX.md`](REPORT_INDEX.md).
-Each report analyzes a ~95-ETF universe against **SPY** on a 14-week
-relative-rotation lookback.
+[`report/`](report), auto-indexed in [`REPORT_INDEX.md`](REPORT_INDEX.md) —
+the index table carries each week's summary inline, so you can scan the
+whole regime arc without opening a single report. Each report analyzes a
+~95-ETF universe against **SPY** on a 14-week relative-rotation lookback.
 
 ### Reading the reports
 
@@ -84,7 +85,8 @@ published here. The end-to-end flow:
 
 5. **Publish** — the markdown reports are committed to `report/` in this
    repo. A GitHub Action regenerates `REPORT_INDEX.md` on every push that
-   touches `report/`, so the index stays current automatically.
+   touches `report/`, merging each dated report's row with its weekly
+   summary — so the index stays current automatically.
 
 ---
 
@@ -339,7 +341,7 @@ relative-rotation-dashboard/
 ├── .github/workflows/
 │   └── auto_index.yaml              # Rebuilds REPORT_INDEX.md on report/ pushes
 ├── action_update_index.py           # Index generator used by the workflow
-├── REPORT_INDEX.md                  # Auto-generated index of report/
+├── REPORT_INDEX.md                  # Auto-generated index w/ weekly summaries
 ├── LICENSE                          # MIT License
 └── README.md                        # This file
 ```
