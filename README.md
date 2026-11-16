@@ -1,7 +1,9 @@
 # Relative Rotation Analysis Dashboard
 
 <p align="center">
-<video src="https://cdn.jsdelivr.net/gh/vialliw/Relative-Rotation-Analysis-Dashboard@main/images/rrg_demo.mp4" width="800" autoplay loop muted playsinline controls></video>
+  <a href="https://cdn.jsdelivr.net/gh/vialliw/Relative-Rotation-Analysis-Dashboard@main/images/rrg_demo.mp4" title="Click to watch the full demo video">
+    <img src="images/rrg_demo.gif" alt="Relative Rotation Analysis Dashboard demo" width="800">
+  </a>
 </p>
 
 <p align="center">
