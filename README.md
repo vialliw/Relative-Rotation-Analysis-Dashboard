@@ -1,7 +1,7 @@
 # Relative Rotation Analysis Dashboard
 
 <p align="center">
-<video src="https://github.com/user-attachments/assets/27def6b3-4c2f-43ef-9d2f-bc21bcec12d4?raw=true" width="800" autoplay loop muted playsinline></video>
+<video src="https://raw.githubusercontent.com/vialliw/Relative-Rotation-Analysis-Dashboard/main/images/rrg_demo.mp4" width="800" autoplay loop muted playsinline controls></video>
 </p>
 
 <p align="center">
