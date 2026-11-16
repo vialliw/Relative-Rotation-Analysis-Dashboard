@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="#weekly-rrg-analysis-reports">Weekly Reports</a> •
+  <a href="#who-this-is-for">Who It's For</a> •
   <a href="#features">Features</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#methodology">Methodology</a> •
@@ -89,6 +90,28 @@ published here. The end-to-end flow:
    repo. A GitHub Action regenerates `REPORT_INDEX.md` on every push that
    touches `report/`, merging each dated report's row with its weekly
    summary — so the index stays current automatically.
+
+---
+
+## Who This Is For
+
+**Group 1 — Investors and analysts tracking sector rotation.** If you
+watch or study sector rotation to maintain your own portfolio, the
+[`report/`](report) series is written for you: a consistent weekly read on
+where leadership is rotating, which themes are improving or decaying, and
+the net call for the week — no setup or code required. Start with
+[`REPORT_INDEX.md`](REPORT_INDEX.md) for a one-screen view of every week,
+then open the dated reports you care about.
+
+**Group 2 — Technical readers building their own pipeline.** If you're
+technically inclined and want to automate a similar analysis workflow —
+for your own ticker universe, data source, or asset class — this repo
+doubles as a worked example. The
+[workflow](#how-a-report-is-produced-the-workflow) and
+[methodology](#methodology) sections lay out the full chain: scheduled
+data ingestion, RRG computation into a self-contained analysis JSON,
+LLM-assisted narrative reports, and an automated roll-up and index —
+a template you can adapt end-to-end.
 
 ---
 
