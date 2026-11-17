@@ -1,4 +1,4 @@
-# RRG Weekly Summary Table — ETF Dashboard vs SPY
+# RRA Weekly Summary Table — ETF Dashboard vs SPY
 
 27 weekly reports, 2026-05-15 → 2026-11-13 (12-week lookback each).
 Cross-week arc: energy/commodity regime (May–Jun) → semis/growth (Jul–Aug)

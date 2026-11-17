@@ -1,9 +1,9 @@
-# RRG Analysis Report — 2026-09-04
+# RRA Analysis Report — 2026-09-04
 
 - **Data as-of:** 2026-09-04
 - **Benchmark:** SPY | **Lookback:** 12 weeks | **Universe:** 96 tickers
 - **Source:** `Relative_Rotation_Dashboard_ETFs_2026-09-04_analysis_prompt.json`
-- **Query:** Analyze the RRG data to identify consistent leaders, high-velocity improvers, decaying momentum, and actionable portfolio tilts.
+- **Query:** Analyze the RRA data to identify consistent leaders, high-velocity improvers, decaying momentum, and actionable portfolio tilts.
 - **Quadrant rules:** lead: Strong RS and momentum - overweight; improving: Building momentum - tactical entry watch; weakening: Fading momentum - reduce exposure; lagging: Weak RS and momentum - avoid
 
 ## 1. Quadrant Census
