@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent
 REPORT_DIR = ROOT / "report"
 INDEX_PATH = ROOT / "REPORT_INDEX.md"
 SUMMARY_NAME = "weekly_summary.md"
+DISPLAY_PREFIX = "Relative_Rotation_Dashboard_ETFs_"
 
 ISO_DATE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 COMPACT_DATE = re.compile(r"(?<!\d)(\d{4})(\d{2})(\d{2})(?!\d)")
@@ -56,6 +57,28 @@ def report_date(filename: str) -> str | None:
     return None
 
 
+def display_name(filename: str) -> str:
+    """Shorten link text by dropping the constant filename prefix."""
+    if filename.startswith(DISPLAY_PREFIX):
+        return filename[len(DISPLAY_PREFIX):]
+    return filename
+
+
+def sorted_reports(files: list[Path]) -> list[Path]:
+    """Roll-up first, then dated reports newest-first, then undated by name."""
+    summary = [p for p in files if p.name == SUMMARY_NAME]
+    dated = sorted(
+        (p for p in files if p.name != SUMMARY_NAME and report_date(p.name)),
+        key=lambda p: (report_date(p.name), p.name.lower()),
+        reverse=True,
+    )
+    undated = sorted(
+        (p for p in files if p.name != SUMMARY_NAME and not report_date(p.name)),
+        key=lambda p: p.name.lower(),
+    )
+    return summary + dated + undated
+
+
 def build_markdown(report_files: list[Path]) -> str:
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     weekly = load_weekly_summaries()
@@ -65,17 +88,18 @@ def build_markdown(report_files: list[Path]) -> str:
         f"Last updated: {timestamp}",
         "",
         "This index is generated automatically from the files in [`report/`](report).",
-        f"The **Weekly summary** column is pulled from [`report/{SUMMARY_NAME}`](report/{SUMMARY_NAME}).",
+        "Rows are sorted newest-first. The **As of** column is the report date parsed from each filename;",
+        f"the **Weekly summary** column is pulled from [`report/{SUMMARY_NAME}`](report/{SUMMARY_NAME}).",
         "",
         f"Total files: {len(report_files)}",
         "",
-        "| File | Weekly summary | Type | Size | Modified |",
-        "| --- | --- | --- | ---: | --- |",
+        "| As of | File | Weekly summary | Type | Size | Modified |",
+        "| --- | --- | --- | --- | ---: | --- |",
     ]
 
     if not report_files:
         lines.extend([
-            "| No files found | — | — | — | — |",
+            "| — | No files found | — | — | — | — |",
             "",
             "The `report/` folder is currently empty.",
         ])
@@ -92,7 +116,7 @@ def build_markdown(report_files: list[Path]) -> str:
         else:
             summary = weekly.get(report_date(report_file.name) or "", "—")
         lines.append(
-            f"| [{report_file.name}]({rel_path}) | {summary} | {suffix.upper()} | {format_size(report_file.stat().st_size)} | {modified} |"
+            f"| {report_date(report_file.name) or '—'} | [{display_name(report_file.name)}]({rel_path}) | {summary} | {suffix.upper()} | {format_size(report_file.stat().st_size)} | {modified} |"
         )
 
     return "\n".join(lines) + "\n"
@@ -102,9 +126,8 @@ def main() -> None:
     if not REPORT_DIR.exists():
         raise FileNotFoundError(f"Report directory not found: {REPORT_DIR}")
 
-    report_files = sorted(
-        [path for path in REPORT_DIR.iterdir() if path.is_file()],
-        key=lambda path: path.name.lower(),
+    report_files = sorted_reports(
+        [path for path in REPORT_DIR.iterdir() if path.is_file()]
     )
     INDEX_PATH.write_text(build_markdown(report_files), encoding="utf-8")
 
