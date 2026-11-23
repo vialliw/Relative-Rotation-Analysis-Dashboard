@@ -1,9 +1,10 @@
 # RRA Weekly Summary Table — ETF Dashboard vs SPY
 
-27 weekly reports, 2026-05-15 → 2026-11-13 (12-week lookback each).
+28 weekly reports, 2026-05-15 → 2026-11-20 (12-week lookback each).
 Cross-week arc: energy/commodity regime (May–Jun) → semis/growth (Jul–Aug)
 → metals inflection (08-21, GDX +21.1) → healthcare/defensive (Sep–Nov)
-→ energy final distribution (11-13).
+→ energy final distribution (11-13) → metals re-acceleration + rate-sensitive
+breaks (11-20).
 
 | Date | Weekly summary |
 |------|----------------|
@@ -34,3 +35,4 @@ Cross-week arc: energy/commodity regime (May–Jun) → semis/growth (Jul–Aug)
 | 2026-10-30 | Ags accelerated hard (WEAT +12.8, CORN +10.4) while USO kept decelerating from LEADING; CIBR/IWD weakened. Call: constructive tape under defensive leadership — ags were the live improving trade and EM-Asia (VNM/FXI) the new probe; healthcare + software core intact. |
 | 2026-11-06 | Rotation broadened again (33 improving) — CANE/ARKK/GDX/HERO entered 12/12; VNM/FXI accelerated (EM-Asia bid) while XBI slipped to WEAKENING — the first healthcare crack. Call: a mixed new regime forming (metals + ags + healthcare + spec-growth); sell the in-progress energy squeeze. |
 | 2026-11-13 | Metals/healthcare/defensive regime confirmed — 9 perfect leaders incl. GDX accelerating (RS-mom 147); the energy complex decelerated from LEADING at max velocity (USO 17.7) = final distribution, and CLOU broke to WEAKENING after a 91.7% streak. Call: rotate out of energy into the accelerating precious-metals complex and persistent healthcare/defensive leaders; EWZ was the lone high-conviction country rotation — watch TLT/XLU/XLP crossing into LEADING as the regime-change trigger. |
+| 2026-11-20 | Rotation-resolution week — LEADING grew to 35 but the improving bench halved (29→18) and WEAKENING doubled (5→9). Perfect-streak roster reshuffled: IEO/SOYB/XLE reached 12/12 while ARKK/GDX slipped to IMPROVING and XSW broke to WEAKENING (CLOU-pattern regime break). Metals re-accelerated across the board (GDX +15.1 fastest, SLV/XME/PLTM/GLD); energy still decelerating plus first crack in CANE; new rate-sensitive weakening cluster (SCHH/IYR/XLF/IYF). Call: rebuild the metals overweight (GDX lead), keep trimming energy/ags into strength, cut the REIT/financial breaks, sell the COPX/CLOU counter-trend squeezes. |

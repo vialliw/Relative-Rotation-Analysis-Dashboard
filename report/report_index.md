@@ -1,6 +1,6 @@
 # RRA Report Index — ETF Dashboard vs SPY
 
-27 weekly reports, 2026-05-15 → 2026-11-13 (12-week lookback each). Regenerated on every pipeline run — do not edit by hand.
+28 weekly reports, 2026-05-15 → 2026-11-20 (12-week lookback each). Regenerated on every pipeline run — do not edit by hand.
 
 | Date | Report | Lead | Impr | Weak | Lag |
 |------|--------|------|------|------|-----|
@@ -31,3 +31,4 @@
 | 2026-10-30 | [Relative_Rotation_Dashboard_ETFs_2026-10-30_analysis_report.md](Relative_Rotation_Dashboard_ETFs_2026-10-30_analysis_report.md) | 28 | 32 | 2 | 34 |
 | 2026-11-06 | [Relative_Rotation_Dashboard_ETFs_2026-11-06_analysis_report.md](Relative_Rotation_Dashboard_ETFs_2026-11-06_analysis_report.md) | 28 | 33 | 3 | 32 |
 | 2026-11-13 | [Relative_Rotation_Dashboard_ETFs_2026-11-13_analysis_report.md](Relative_Rotation_Dashboard_ETFs_2026-11-13_analysis_report.md) | 31 | 29 | 5 | 31 |
+| 2026-11-20 | [Relative_Rotation_Dashboard_ETFs_2026-11-20_analysis_report.md](Relative_Rotation_Dashboard_ETFs_2026-11-20_analysis_report.md) | 35 | 18 | 9 | 34 |
