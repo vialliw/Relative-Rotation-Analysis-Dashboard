@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>RRA Analysis Report — 2026-08-07</title>
+<style>
+  body { font-family:'Segoe UI',Calibri,sans-serif; max-width:1180px; margin:32px auto; padding:0 24px; color:#1a1a1a; line-height:1.55; font-size:15px; }
+  h1 { font-size:26px; border-bottom:3px solid #2c5f8a; padding-bottom:8px; }
+  h2 { font-size:20px; color:#2c5f8a; margin-top:36px; border-bottom:1px solid #cdd7e0; padding-bottom:4px; }
+  h3 { font-size:16px; color:#444; }
+  table { border-collapse:collapse; width:100%; margin:14px 0; font-size:12.5px; }
+  th,td { border:1px solid #d0d7de; padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:#f0f4f8; }
+  tr:nth-child(even) td { background:#fafbfc; }
+  tr.x-lead td { background:#d4edda; }
+  tr.x-lag td { background:#f8d7da; }
+  table.grid td.q-lead { background:#d4edda; }
+  table.grid td.q-lag  { background:#f8d7da; }
+  table.sortable th { cursor:pointer; user-select:none; }
+  table.sortable th:hover { background:#dce6ef; }
+  table.sortable th.sorted-asc::after  { content:" ▲"; font-size:10px; color:#2c5f8a; }
+  table.sortable th.sorted-desc::after { content:" ▼"; font-size:10px; color:#2c5f8a; }
+  code { background:#eef2f6; padding:1px 5px; border-radius:3px; font-size:12.5px; }
+  blockquote { border-left:4px solid #2c5f8a; background:#f4f8fb; margin:14px 0; padding:8px 16px; color:#333; }
+  blockquote p { margin:4px 0; }
+</style></head><body>
+<h1>RRA Analysis Report — 2026-08-07</h1>
+<ul>
+<li><strong>Data as-of:</strong> 2026-08-07</li>
+<li><strong>Benchmark:</strong> SPY | <strong>Lookback:</strong> 12 weeks | <strong>Universe:</strong> 96 tickers</li>
+<li><strong>Source:</strong> <code>Relative_Rotation_Dashboard_ETFs_2026-08-07_analysis_prompt.json</code></li>
+<li><strong>Query:</strong> Analyze the RRA data to identify consistent leaders, high-velocity improvers, decaying momentum, and actionable portfolio tilts.</li>
+<li><strong>Quadrant rules:</strong> lead: Strong RS and momentum - overweight; improving: Building momentum - tactical entry watch; weakening: Fading momentum - reduce exposure; lagging: Weak RS and momentum - avoid</li>
+</ul>
+<h2>1. Quadrant Census</h2>
+<p><strong>LEADING: 17</strong> | <strong>IMPROVING: 9</strong> | <strong>WEAKENING: 11</strong> | <strong>LAGGING: 59</strong></p>
+<blockquote>
+<p>Weekly read: Regime handoff week — SMH falls to <strong>WEAKENING</strong> (↙), QQQ breaks <strong>LEADING-&gt;IMPROVING</strong>, and not one consistent leader heads ↗.
+Metals and defensives accelerate off the floor: the coil is releasing.</p>
+</blockquote>
+<table class="grid">
+<thead>
+<tr>
+  <th>RS-Momentum ↓ / RS-Ratio →</th>
+  <th><strong>&lt; 100</strong></th>
+  <th><strong>≥ 100</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>≥ 100</strong></td>
+  <td><strong>IMPROVING (9)</strong><br>• Energy/commodity: <code>CANE</code>↗<br>• Healthcare: <code>IHI</code>↗<br>• Defensive/rate-sensitive: <code>ITB</code>↗<br>• Value/dividend/consumer: <code>XRT</code>↗<br>• Growth/mega-cap tech: <code>ARKK</code>↙ <code>HERO</code>↗ <code>QQQ</code>↙ <code>VOT</code>↘<br>• EM/Intl: <code>INDA</code>↗</td>
+  <td class="q-lead"><strong>LEADING (17)</strong><br>• Healthcare: <code>IBB</code>↗ <code>VHT</code>↗ <code>XBI</code>↗ <code>XLV</code>↗ <code>XPH</code>↗<br>• Value/dividend/consumer: <code>IWD</code>↗<br>• Financials/REITs: <code>IAI</code>↖ <code>IYF</code>↗ <code>KRE</code>↗ <code>XLF</code>↗<br>• Growth/mega-cap tech: <code>AWAY</code>↘ <code>CIBR</code>↙ <code>CLOU</code>↖ <code>DIA</code>↗ <code>XLK</code>↙ <code>XSW</code>↙<br>• Transports/infra/industrials: <code>JETS</code>↗</td>
+</tr>
+<tr>
+  <td><strong>&lt; 100</strong></td>
+  <td class="q-lag"><strong>LAGGING (59)</strong><br>• Energy/commodity: <code>BCD</code>↖ <code>COMT</code>↖ <code>CORN</code>↖ <code>DBC</code>↖ <code>FCG</code>↖ <code>FTGC</code>↖ <code>NANR</code>↗ <code>SOYB</code>↖ <code>UNG</code>↖ <code>USO</code>↖ <code>VDE</code>↖ <code>WEAT</code>↖ <code>XES</code>↖ <code>XLE</code>↖ <code>XOP</code>↖<br>• Metals/hard-asset: <code>BATT</code>↗ <code>COPX</code>↗ <code>DBB</code>↗ <code>GDX</code>↗ <code>GLD</code>↗ <code>LIT</code>↙ <code>PALL</code>↗ <code>PLTM</code>↗ <code>REMX</code>↙ <code>SLV</code>↗ <code>SLX</code>↗ <code>SMOG</code>↙ <code>XME</code>↗<br>• Defensive/rate-sensitive: <code>HYG</code>↗ <code>JNK</code>↗ <code>SGOV</code>↗ <code>TLT</code>↗ <code>XLP</code>↖ <code>XLU</code>↖<br>• Value/dividend/consumer: <code>XLB</code>↗ <code>XLY</code>↘<br>• Financials/REITs: <code>IYR</code>↖ <code>SCHH</code>↖<br>• Growth/mega-cap tech: <code>IWF</code>↙ <code>VBK</code>↖ <code>XLC</code>↗<br>• Clean energy: <code>ICLN</code>↙ <code>PBW</code>↙ <code>QCLN</code>↙ <code>TAN</code>↖<br>• EM/Intl: <code>EEM</code>↙ <code>EFA</code>↗ <code>EWA</code>↗ <code>EWC</code>↗ <code>EWY</code>↙ <code>EWZ</code>↗ <code>FXI</code>↗ <code>VGK</code>↗ <code>VNM</code>↙ <code>VXUS</code>↗<br>• Transports/infra/industrials: <code>GRID</code>↙ <code>IFRA</code>↖ <code>XAR</code>↗ <code>XTN</code>↙</td>
+  <td><strong>WEAKENING (11)</strong><br>• Energy/commodity: <code>IEO</code>↖<br>• Metals/hard-asset: <code>CPER</code>↗<br>• Value/dividend/consumer: <code>VBR</code>↗ <code>VOE</code>↗ <code>VTV</code>↗<br>• Growth/mega-cap tech: <code>IWM</code>↖ <code>SMH</code>↙<br>• EM/Intl: <code>EWJ</code>↗<br>• Transports/infra/industrials: <code>IYT</code>↖ <code>XLI</code>↗<br>• Other: <code>AMLP</code>↗</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Leadership Regime</h2>
+<p>Consistent leaders (consistency ≥ 75%), ranked by consistency then velocity:</p>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Quadrant</th>
+  <th>RS-Ratio</th>
+  <th>RS-Mom</th>
+  <th>Vel 1w</th>
+  <th>Dir</th>
+  <th>Heading</th>
+  <th>Persist</th>
+  <th>Lead wks</th>
+  <th>Lag wks</th>
+  <th>Consist %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>XLK</td>
+  <td>LEADING</td>
+  <td>107.29</td>
+  <td>107.00</td>
+  <td>5.9</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>12</td>
+  <td>0</td>
+  <td>100.0</td>
+</tr>
+<tr>
+  <td>CIBR</td>
+  <td>LEADING</td>
+  <td>130.09</td>
+  <td>145.90</td>
+  <td>2.3</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>12</td>
+  <td>0</td>
+  <td>100.0</td>
+</tr>
+<tr>
+  <td>CLOU</td>
+  <td>LEADING</td>
+  <td>118.11</td>
+  <td>135.50</td>
+  <td>1.9</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>12</td>
+  <td>0</td>
+  <td>100.0</td>
+</tr>
+<tr>
+  <td>XSW</td>
+  <td>LEADING</td>
+  <td>112.28</td>
+  <td>142.10</td>
+  <td>2.0</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>9</td>
+  <td>0</td>
+  <td>75.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Read: Four consistent leaders left after SMH and QQQ lost their streaks — XLK/CIBR/XSW all head ↙, CLOU ↖. Streaks intact, trajectories pointing down: the last of the growth regime is held by inertia, not by fresh buying.</p>
+</blockquote>
+<h2>3. Improving Trends</h2>
+<p>Top 10 <strong>IMPROVING</strong> tickers by 1-week velocity:</p>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Quadrant</th>
+  <th>RS-Ratio</th>
+  <th>RS-Mom</th>
+  <th>Vel 1w</th>
+  <th>Dir</th>
+  <th>Heading</th>
+  <th>Persist</th>
+  <th>Lead wks</th>
+  <th>Lag wks</th>
+  <th>Consist %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>CANE</td>
+  <td>IMPROVING</td>
+  <td>99.35</td>
+  <td>100.96</td>
+  <td>8.3</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>1</td>
+  <td>7</td>
+  <td>8.3</td>
+</tr>
+<tr>
+  <td>IHI</td>
+  <td>IMPROVING</td>
+  <td>94.70</td>
+  <td>107.93</td>
+  <td>8.3</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>PENDING</td>
+  <td>0</td>
+  <td>10</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>ARKK</td>
+  <td>IMPROVING</td>
+  <td>90.58</td>
+  <td>100.68</td>
+  <td>6.1</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>4</td>
+  <td>0</td>
+  <td>33.3</td>
+</tr>
+<tr>
+  <td>HERO</td>
+  <td>IMPROVING</td>
+  <td>91.95</td>
+  <td>103.11</td>
+  <td>4.5</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>0</td>
+  <td>11</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>QQQ</td>
+  <td>IMPROVING</td>
+  <td>99.97</td>
+  <td>100.53</td>
+  <td>3.7</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>TEMPORARY</td>
+  <td>11</td>
+  <td>0</td>
+  <td>91.7</td>
+</tr>
+<tr>
+  <td>ITB</td>
+  <td>IMPROVING</td>
+  <td>95.01</td>
+  <td>103.10</td>
+  <td>3.5</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>0</td>
+  <td>7</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>XRT</td>
+  <td>IMPROVING</td>
+  <td>98.32</td>
+  <td>103.58</td>
+  <td>2.1</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>0</td>
+  <td>7</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>INDA</td>
+  <td>IMPROVING</td>
+  <td>93.61</td>
+  <td>100.18</td>
+  <td>1.7</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>0</td>
+  <td>8</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>VOT</td>
+  <td>IMPROVING</td>
+  <td>99.47</td>
+  <td>103.22</td>
+  <td>0.5</td>
+  <td>DECELERATING</td>
+  <td>↘</td>
+  <td>CONFIRMED</td>
+  <td>4</td>
+  <td>0</td>
+  <td>33.3</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Read: Genuine improvers finally exist — IHI +8.3 ↗ (second week accelerating), HERO +4.5, ITB +3.5, XRT +2.1, INDA, CANE all ↗. But the two biggest names are impostors: ARKK +6.1 and QQQ +3.7 head ↙ — faded leaders parked in <strong>IMPROVING</strong>, not improvers.</p>
+</blockquote>
+<h2>4. Weakening Momentum</h2>
+<p><strong>WEAKENING</strong> quadrant:</p>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Quadrant</th>
+  <th>RS-Ratio</th>
+  <th>RS-Mom</th>
+  <th>Vel 1w</th>
+  <th>Dir</th>
+  <th>Heading</th>
+  <th>Persist</th>
+  <th>Lead wks</th>
+  <th>Lag wks</th>
+  <th>Consist %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>IEO</td>
+  <td>WEAKENING</td>
+  <td>101.42</td>
+  <td>79.89</td>
+  <td>8.7</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>PENDING</td>
+  <td>1</td>
+  <td>7</td>
+  <td>8.3</td>
+</tr>
+<tr>
+  <td>SMH</td>
+  <td>WEAKENING</td>
+  <td>107.96</td>
+  <td>96.60</td>
+  <td>8.2</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>TEMPORARY</td>
+  <td>11</td>
+  <td>0</td>
+  <td>91.7</td>
+</tr>
+<tr>
+  <td>AMLP</td>
+  <td>WEAKENING</td>
+  <td>101.60</td>
+  <td>92.33</td>
+  <td>7.1</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>PENDING</td>
+  <td>0</td>
+  <td>9</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>EWJ</td>
+  <td>WEAKENING</td>
+  <td>100.48</td>
+  <td>94.36</td>
+  <td>4.8</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>0</td>
+  <td>9</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>VTV</td>
+  <td>WEAKENING</td>
+  <td>103.17</td>
+  <td>99.40</td>
+  <td>4.1</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>0</td>
+  <td>9</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>CPER</td>
+  <td>WEAKENING</td>
+  <td>101.01</td>
+  <td>98.89</td>
+  <td>4.0</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>0</td>
+  <td>10</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>VOE</td>
+  <td>WEAKENING</td>
+  <td>101.34</td>
+  <td>96.64</td>
+  <td>4.0</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>PENDING</td>
+  <td>0</td>
+  <td>10</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>XLI</td>
+  <td>WEAKENING</td>
+  <td>100.19</td>
+  <td>94.46</td>
+  <td>3.6</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>0</td>
+  <td>11</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>VBR</td>
+  <td>WEAKENING</td>
+  <td>101.13</td>
+  <td>97.68</td>
+  <td>3.0</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>PENDING</td>
+  <td>0</td>
+  <td>9</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>IYT</td>
+  <td>WEAKENING</td>
+  <td>101.14</td>
+  <td>99.83</td>
+  <td>1.6</td>
+  <td>ACCELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>2</td>
+  <td>4</td>
+  <td>16.7</td>
+</tr>
+<tr>
+  <td>IWM</td>
+  <td>WEAKENING</td>
+  <td>100.88</td>
+  <td>98.42</td>
+  <td>0.8</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>4</td>
+  <td>3</td>
+  <td>33.3</td>
+</tr>
+</tbody>
+</table>
+<p>Decelerating <strong>LEADING</strong> tickers (distribution watch), top 10 by velocity:</p>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Quadrant</th>
+  <th>RS-Ratio</th>
+  <th>RS-Mom</th>
+  <th>Vel 1w</th>
+  <th>Dir</th>
+  <th>Heading</th>
+  <th>Persist</th>
+  <th>Lead wks</th>
+  <th>Lag wks</th>
+  <th>Consist %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>XLK</td>
+  <td>LEADING</td>
+  <td>107.29</td>
+  <td>107.00</td>
+  <td>5.9</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>12</td>
+  <td>0</td>
+  <td>100.0</td>
+</tr>
+<tr>
+  <td>IWD</td>
+  <td>LEADING</td>
+  <td>104.97</td>
+  <td>100.93</td>
+  <td>3.1</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>1</td>
+  <td>5</td>
+  <td>8.3</td>
+</tr>
+<tr>
+  <td>IYF</td>
+  <td>LEADING</td>
+  <td>103.41</td>
+  <td>109.11</td>
+  <td>2.5</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>3</td>
+  <td>6</td>
+  <td>25.0</td>
+</tr>
+<tr>
+  <td>XLF</td>
+  <td>LEADING</td>
+  <td>104.24</td>
+  <td>111.02</td>
+  <td>2.3</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>3</td>
+  <td>6</td>
+  <td>25.0</td>
+</tr>
+<tr>
+  <td>CIBR</td>
+  <td>LEADING</td>
+  <td>130.09</td>
+  <td>145.90</td>
+  <td>2.3</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>12</td>
+  <td>0</td>
+  <td>100.0</td>
+</tr>
+<tr>
+  <td>AWAY</td>
+  <td>LEADING</td>
+  <td>102.33</td>
+  <td>121.46</td>
+  <td>2.2</td>
+  <td>DECELERATING</td>
+  <td>↘</td>
+  <td>PENDING</td>
+  <td>5</td>
+  <td>1</td>
+  <td>41.7</td>
+</tr>
+<tr>
+  <td>XSW</td>
+  <td>LEADING</td>
+  <td>112.28</td>
+  <td>142.10</td>
+  <td>2.0</td>
+  <td>DECELERATING</td>
+  <td>↙</td>
+  <td>CONFIRMED</td>
+  <td>9</td>
+  <td>0</td>
+  <td>75.0</td>
+</tr>
+<tr>
+  <td>CLOU</td>
+  <td>LEADING</td>
+  <td>118.11</td>
+  <td>135.50</td>
+  <td>1.9</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>12</td>
+  <td>0</td>
+  <td>100.0</td>
+</tr>
+<tr>
+  <td>IAI</td>
+  <td>LEADING</td>
+  <td>100.23</td>
+  <td>107.80</td>
+  <td>1.4</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>3</td>
+  <td>4</td>
+  <td>25.0</td>
+</tr>
+<tr>
+  <td>XBI</td>
+  <td>LEADING</td>
+  <td>107.22</td>
+  <td>100.83</td>
+  <td>1.2</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>6</td>
+  <td>5</td>
+  <td>50.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Read: Regime break confirmed: SMH formally <strong>WEAKENING</strong> on an ↙ heading (Δmom -7.5) — concentrated-semi leadership ends this arc. The rest of the list is ↗ squeezes (AMLP/EWJ/VTV/CPER/VOE/XLI/VBR) plus momentum-only lifters (IEO/IYT/IWM ↖) — value, industrials and Japan lifting off the floor through <strong>WEAKENING</strong>.</p>
+</blockquote>
+<h2>5. Quadrant Crossings</h2>
+<p>14 crossings this week: <strong>4 confirmed / 10 provisional</strong> (geometric deadband 1.0 pt past the crossed boundary). By type: 3x <strong>LAGGING-&gt;IMPROVING</strong>, 3x <strong>LAGGING-&gt;WEAKENING</strong>, 3x <strong>WEAKENING-&gt;LAGGING</strong>, 2x <strong>WEAKENING-&gt;LEADING</strong>, 1x <strong>IMPROVING-&gt;LAGGING</strong>, 1x <strong>LEADING-&gt;IMPROVING</strong>, 1x <strong>LEADING-&gt;WEAKENING</strong>. No diagonal/discontinuous transitions.</p>
+<h3>Counter-clockwise — abrupt reversals</h3>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Crossing</th>
+  <th>Signal</th>
+  <th>Status</th>
+  <th>Heading</th>
+  <th>ΔRatio</th>
+  <th>ΔMom</th>
+  <th>Landed</th>
+  <th>Past</th>
+  <th>Persist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>QQQ</code></td>
+  <td>LEADING-&gt;IMPROVING</td>
+  <td>potential regime break / RS breakdown warning</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↙</td>
+  <td>-1.35</td>
+  <td>-3.41</td>
+  <td>ratio 99.97</td>
+  <td>0.03 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr class="x-lag">
+  <td><code>IWF</code></td>
+  <td>IMPROVING-&gt;LAGGING</td>
+  <td>failed recovery / bearish continuation</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↙</td>
+  <td>-0.36</td>
+  <td>-2.72</td>
+  <td>mom 99.23</td>
+  <td>0.77 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr>
+  <td><code>CPER</code></td>
+  <td>LAGGING-&gt;WEAKENING</td>
+  <td>possible squeeze / counter-trend rally — not a buy signal</td>
+  <td>CONFIRMED</td>
+  <td>↗</td>
+  <td>+1.99</td>
+  <td>+3.48</td>
+  <td>ratio 101.01</td>
+  <td>1.01</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr>
+  <td><code>EWJ</code></td>
+  <td>LAGGING-&gt;WEAKENING</td>
+  <td>possible squeeze / counter-trend rally — not a buy signal</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↗</td>
+  <td>+2.81</td>
+  <td>+3.89</td>
+  <td>ratio 100.48</td>
+  <td>0.48 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr>
+  <td><code>XLI</code></td>
+  <td>LAGGING-&gt;WEAKENING</td>
+  <td>possible squeeze / counter-trend rally — not a buy signal</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↗</td>
+  <td>+1.39</td>
+  <td>+3.35</td>
+  <td>ratio 100.19</td>
+  <td>0.19 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr class="x-lead">
+  <td><code>IWD</code></td>
+  <td>WEAKENING-&gt;LEADING</td>
+  <td>possible re-acceleration — verify follow-through</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↗</td>
+  <td>+0.59</td>
+  <td>+3.03</td>
+  <td>mom 100.93</td>
+  <td>0.93 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr class="x-lead">
+  <td><code>KRE</code></td>
+  <td>WEAKENING-&gt;LEADING</td>
+  <td>possible re-acceleration — verify follow-through</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↗</td>
+  <td>+0.01</td>
+  <td>+2.50</td>
+  <td>mom 100.83</td>
+  <td>0.83 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+</tbody>
+</table>
+<h3>Clockwise — normal rotation</h3>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Crossing</th>
+  <th>Signal</th>
+  <th>Status</th>
+  <th>Heading</th>
+  <th>ΔRatio</th>
+  <th>ΔMom</th>
+  <th>Landed</th>
+  <th>Past</th>
+  <th>Persist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>SMH</code></td>
+  <td>LEADING-&gt;WEAKENING</td>
+  <td>potential distribution / early reversal — watch</td>
+  <td>CONFIRMED</td>
+  <td>↙</td>
+  <td>-3.30</td>
+  <td>-7.50</td>
+  <td>mom 96.60</td>
+  <td>3.40</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr class="x-lag">
+  <td><code>EWY</code></td>
+  <td>WEAKENING-&gt;LAGGING</td>
+  <td>potential bearish continuation — confirm persistence</td>
+  <td>CONFIRMED</td>
+  <td>↙</td>
+  <td>-3.84</td>
+  <td>-4.78</td>
+  <td>ratio 98.24</td>
+  <td>1.76</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr class="x-lag">
+  <td><code>WEAT</code></td>
+  <td>WEAKENING-&gt;LAGGING</td>
+  <td>potential bearish continuation — confirm persistence</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↖</td>
+  <td>-4.36</td>
+  <td>+3.90</td>
+  <td>ratio 99.34</td>
+  <td>0.66 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr class="x-lag">
+  <td><code>SCHH</code></td>
+  <td>WEAKENING-&gt;LAGGING</td>
+  <td>potential bearish continuation — confirm persistence</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↖</td>
+  <td>-1.13</td>
+  <td>+1.94</td>
+  <td>ratio 99.94</td>
+  <td>0.06 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr>
+  <td><code>HERO</code></td>
+  <td>LAGGING-&gt;IMPROVING</td>
+  <td>early recovery attempt — unconfirmed</td>
+  <td>CONFIRMED</td>
+  <td>↗</td>
+  <td>+2.69</td>
+  <td>+3.54</td>
+  <td>mom 103.11</td>
+  <td>3.11</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr>
+  <td><code>CANE</code></td>
+  <td>LAGGING-&gt;IMPROVING</td>
+  <td>early recovery attempt — unconfirmed</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↗</td>
+  <td>+1.11</td>
+  <td>+8.25</td>
+  <td>mom 100.96</td>
+  <td>0.96 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+<tr>
+  <td><code>INDA</code></td>
+  <td>LAGGING-&gt;IMPROVING</td>
+  <td>early recovery attempt — unconfirmed</td>
+  <td>PROVISIONAL_CROSSING</td>
+  <td>↗</td>
+  <td>+1.65</td>
+  <td>+0.38</td>
+  <td>mom 100.18</td>
+  <td>0.18 ⚠</td>
+  <td>TEMPORARY</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Read: 14 crossings but only 4 confirmed, split evenly 7 counter-clockwise / 7 clockwise — boundary churn, and the one that matters is confirmed: SMH's <strong>LEADING-&gt;WEAKENING</strong> regime break at 3.40 past the line on a ↙ heading ends the concentrated-semi arc. EWY's <strong>WEAKENING-&gt;LAGGING</strong> (1.76), CPER's ↗ squeeze and HERO's ↗ <strong>LAGGING-&gt;IMPROVING</strong> bottoming round out the confirmed four. The provisional pile is the real watch list: QQQ's <strong>LEADING-&gt;IMPROVING</strong> sits 0.03 past the boundary — a coin-flip whipsaw — while the squeeze cluster (EWJ/XLI) and the <strong>WEAKENING-&gt;LEADING</strong> re-accelerations (IWD/KRE) all land thin; direction stays unresolved until they settle.</p>
+</blockquote>
+<h2>6. Velocity Analysis</h2>
+<p>Fastest movers (top 10 by |velocity_1w|):</p>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>Quadrant</th>
+  <th>Vel 1w</th>
+  <th>Dir</th>
+  <th>Heading</th>
+  <th>Persist</th>
+  <th>RS-Mom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GDX</td>
+  <td>LAGGING</td>
+  <td>12.8</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>72.42</td>
+</tr>
+<tr>
+  <td>XAR</td>
+  <td>LAGGING</td>
+  <td>10.2</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>97.71</td>
+</tr>
+<tr>
+  <td>COPX</td>
+  <td>LAGGING</td>
+  <td>9.9</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>83.57</td>
+</tr>
+<tr>
+  <td>XLE</td>
+  <td>LAGGING</td>
+  <td>9.0</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>80.59</td>
+</tr>
+<tr>
+  <td>VDE</td>
+  <td>LAGGING</td>
+  <td>8.8</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>79.43</td>
+</tr>
+<tr>
+  <td>NANR</td>
+  <td>LAGGING</td>
+  <td>8.7</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>CONFIRMED</td>
+  <td>79.23</td>
+</tr>
+<tr>
+  <td>IEO</td>
+  <td>WEAKENING</td>
+  <td>8.7</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>PENDING</td>
+  <td>79.89</td>
+</tr>
+<tr>
+  <td>XOP</td>
+  <td>LAGGING</td>
+  <td>8.4</td>
+  <td>DECELERATING</td>
+  <td>↖</td>
+  <td>CONFIRMED</td>
+  <td>75.24</td>
+</tr>
+<tr>
+  <td>CANE</td>
+  <td>IMPROVING</td>
+  <td>8.3</td>
+  <td>DECELERATING</td>
+  <td>↗</td>
+  <td>TEMPORARY</td>
+  <td>100.96</td>
+</tr>
+<tr>
+  <td>IHI</td>
+  <td>IMPROVING</td>
+  <td>8.3</td>
+  <td>ACCELERATING</td>
+  <td>↗</td>
+  <td>PENDING</td>
+  <td>107.93</td>
+</tr>
+</tbody>
+</table>
+<p>Dead money (velocity &lt; 1.0): <code>VBK</code> 0.06, <code>XPH</code> 0.32, <code>VOT</code> 0.52, <code>EEM</code> 0.55, <code>XLY</code> 0.68, <code>XLC</code> 0.69, <code>IWM</code> 0.80</p>
+<blockquote>
+<p>Read: Metals take the velocity crown with direction to match — GDX +12.8, XAR +10.2, COPX +9.9, NANR all ↗ accelerating: real bottoming, not squeezes. Flags: EWJ/CPER/XLI <strong>LAGGING-&gt;WEAKENING</strong> squeezes are sells; QQQ's regime break and EWY/WEAT/SCHH breakdowns confirm the exit side.</p>
+</blockquote>
+<h2>7. Structural Laggards</h2>
+<p>Top 10 <strong>LAGGING</strong> by lag-weeks:</p>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Ticker</th>
+  <th>RS-Ratio</th>
+  <th>RS-Mom</th>
+  <th>Vel 1w</th>
+  <th>Lag wks</th>
+  <th>Consist %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>COPX</td>
+  <td>93.73</td>
+  <td>83.57</td>
+  <td>9.9</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>DBB</td>
+  <td>95.09</td>
+  <td>91.13</td>
+  <td>3.9</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>EFA</td>
+  <td>99.13</td>
+  <td>94.71</td>
+  <td>4.0</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>EWA</td>
+  <td>95.86</td>
+  <td>84.96</td>
+  <td>4.6</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>EWC</td>
+  <td>97.80</td>
+  <td>93.38</td>
+  <td>2.7</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>EWZ</td>
+  <td>85.47</td>
+  <td>69.51</td>
+  <td>4.5</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>FXI</td>
+  <td>91.98</td>
+  <td>97.12</td>
+  <td>5.1</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>GDX</td>
+  <td>80.89</td>
+  <td>72.42</td>
+  <td>12.8</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>GLD</td>
+  <td>83.07</td>
+  <td>77.74</td>
+  <td>6.2</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+<tr>
+  <td>HYG</td>
+  <td>94.98</td>
+  <td>94.59</td>
+  <td>3.9</td>
+  <td>12</td>
+  <td>0.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Read: 59 <strong>LAGGING</strong> in three buckets: metals (GDX/COPX/GLD — now the fastest ↗ movers on the board), DM/EM ex-US (EFA/EWA/EWC/EWZ/FXI), and credit (HYG/JNK). The lag-list is producing the next leadership cohort.</p>
+</blockquote>
+<h2>8. Actionable Portfolio Tilts</h2>
+<table class="sortable">
+<thead>
+<tr>
+  <th>Tilt</th>
+  <th>Detail</th>
+  <th>Count</th>
+  <th>Tickers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="x-lead">
+  <td><strong>Overweight</strong></td>
+  <td>—</td>
+  <td>8</td>
+  <td><code>CLOU</code>, <code>DIA</code>, <code>IBB</code>, <code>IHI</code>, <code>JETS</code>, <code>KRE</code>, <code>VHT</code>, <code>XLV</code></td>
+</tr>
+<tr>
+  <td><strong>Hold-but-trim</strong></td>
+  <td>decelerating leaders</td>
+  <td>1</td>
+  <td><code>XLK</code></td>
+</tr>
+<tr>
+  <td><strong>Reduce</strong></td>
+  <td>weakening</td>
+  <td>11</td>
+  <td><code>AMLP</code>, <code>CPER</code>, <code>EWJ</code>, <code>IEO</code>, <code>IWM</code>, <code>IYT</code>, <code>SMH</code>, <code>VBR</code>, <code>VOE</code>, <code>VTV</code>, <code>XLI</code></td>
+</tr>
+<tr class="x-lag">
+  <td><strong>Avoid</strong></td>
+  <td>structural laggards</td>
+  <td>45</td>
+  <td><code>BATT</code>, <code>BCD</code>, <code>COMT</code>, <code>COPX</code>, <code>CORN</code>, <code>DBB</code>, <code>DBC</code>, <code>EFA</code>, <code>EWA</code>, <code>EWC</code>, <code>EWZ</code>, <code>FCG</code>, <code>FTGC</code>, <code>FXI</code>, <code>GDX</code>, <code>GLD</code>, <code>HYG</code>, <code>IFRA</code>, <code>IYR</code>, <code>JNK</code>, <code>NANR</code>, <code>PALL</code>, <code>PLTM</code>, <code>REMX</code>, <code>SCHH</code>, <code>SGOV</code>, <code>SLV</code>, <code>SMOG</code>, <code>SOYB</code>, <code>TLT</code>, <code>UNG</code>, <code>VDE</code>, <code>VGK</code>, <code>VNM</code>, <code>VXUS</code>, <code>XAR</code>, <code>XES</code>, <code>XLB</code>, <code>XLC</code>, <code>XLE</code>, <code>XLP</code>, <code>XLU</code>, <code>XLY</code>, <code>XME</code>, <code>XOP</code></td>
+</tr>
+<tr>
+  <td><strong>Watch</strong></td>
+  <td>improving, RS-mom ≥ 110 but RS-ratio &lt; 100</td>
+  <td>0</td>
+  <td>none</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Net call:</strong> Rotate: exit SMH (<strong>WEAKENING</strong>, ↙) and treat QQQ's regime break as a sell, not a dip-buy; build the successor regime — ↗-bottoming metals (GDX/COPX) and healthcare (IHI/VHT/XLV). Core hold: the defensive/financial overweight bloc (XLV/VHT/IBB/KRE/DIA). Trigger: GDX/COPX stalling or flipping ↙ below RS-ratio 100 cancels the metals leg.</p>
+<h2>9. Data Caveats</h2>
+<ul>
+<li><code>consistency_score</code> = lead_weeks_3m / lookback (12) — share of the window spent in <strong>LEADING</strong>. lead+lag &lt; lookback is normal (<strong>IMPROVING</strong>/<strong>WEAKENING</strong> weeks are uncounted); it is NOT insufficient history.</li>
+<li>Minimal extreme-quadrant history (lead+lag ≤ 2 — score can't distinguish &quot;new to universe&quot; from &quot;always middling&quot;): <code>EWY</code> (1/1)</li>
+<li><code>angle_deg</code> convention is not defined in the prompt; do not infer rotation direction from it alone — use quadrant + <code>heading</code> (or, on legacy payloads without a prior file, quadrant + velocity_direction).</li>
+<li><code>crossing_status</code> = geometric deadband on the actually-crossed axis (ratio for L&lt;-&gt;I &amp; W&lt;-&gt;L; momentum for L&lt;-&gt;W &amp; I&lt;-&gt;L; diagonals both) — <strong>PROVISIONAL_CROSSING</strong> within 1.0 pt of 100, <strong>CONFIRMED</strong> beyond; whipsaw-verdict needs a second week. <code>quadrant_persistence</code> = consecutive weeks occupying the current quadrant (<strong>TEMPORARY</strong>/<strong>PENDING</strong>/<strong>CONFIRMED</strong>) — occupancy duration only, NOT crossing validity; <code>heading</code> <strong>FLAT</strong> reserved for |Δ|&lt;0.05 on both axes (0 occurrences this week).</li>
+<li>Tilt buckets are rule-generated; review before acting.</li>
+</ul>
+
+<script>
+document.querySelectorAll('table.sortable th').forEach(function(th){
+  th.addEventListener('click', function(){
+    var table=th.closest('table'), idx=[...th.parentNode.children].indexOf(th);
+    var asc=!th.classList.contains('sorted-asc');
+    table.querySelectorAll('th').forEach(function(h){h.classList.remove('sorted-asc','sorted-desc');});
+    th.classList.add(asc?'sorted-asc':'sorted-desc');
+    var rows=[...table.tBodies[0].rows];
+    rows.sort(function(a,b){
+      var x=a.cells[idx].textContent.trim(), y=b.cells[idx].textContent.trim();
+      var nx=parseFloat(x), ny=parseFloat(y);
+      var cmp=(!isNaN(nx)&&!isNaN(ny))?nx-ny:x.localeCompare(y);
+      return asc?cmp:-cmp;
+    });
+    rows.forEach(function(r){table.tBodies[0].appendChild(r);});
+  });
+});
+</script>
+</body></html>
