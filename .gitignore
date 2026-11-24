@@ -9,8 +9,9 @@
 *.csv
 
 # Dashboard Outputs (Avoid uploading 7MB+ generated files)
-# Only track these if you specifically want to host a sample
+# report/*.html IS tracked — published RRA analysis reports served by GitHub Pages
 *.html
+!report/*.html
 
 # Workspace / IDE settings
 .vscode/
