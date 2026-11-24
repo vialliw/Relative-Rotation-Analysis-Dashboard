@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 REPORT_DIR = ROOT / "report"
 INDEX_PATH = ROOT / "REPORT_INDEX.md"
+PAGES_BASE = "https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard"
 SUMMARY_NAME = "weekly_summary.md"
 DISPLAY_PREFIX = "Relative_Rotation_Dashboard_ETFs_"
 
@@ -108,6 +109,9 @@ def build_markdown(report_files: list[Path]) -> str:
     for report_file in report_files:
         rel_path = report_file.relative_to(ROOT).as_posix()
         suffix = report_file.suffix.lower().lstrip(".") or "file"
+        # Link to the GitHub Pages render (verbatim .html; Jekyll-built .html for .md sources)
+        link_path = rel_path[:-3] + ".html" if rel_path.endswith(".md") else rel_path
+        link_url = f"{PAGES_BASE}/{link_path}"
         modified = datetime.fromtimestamp(report_file.stat().st_mtime, tz=timezone.utc).strftime(
             "%Y-%m-%d %H:%M UTC"
         )
@@ -116,7 +120,7 @@ def build_markdown(report_files: list[Path]) -> str:
         else:
             summary = weekly.get(report_date(report_file.name) or "", "—")
         lines.append(
-            f"| {report_date(report_file.name) or '—'} | [{display_name(report_file.name)}]({rel_path}) | {summary} | {suffix.upper()} | {format_size(report_file.stat().st_size)} | {modified} |"
+            f"| {report_date(report_file.name) or '—'} | [{display_name(report_file.name)}]({link_url}) | {summary} | {suffix.upper()} | {format_size(report_file.stat().st_size)} | {modified} |"
         )
 
     return "\n".join(lines) + "\n"
