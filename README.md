@@ -33,16 +33,36 @@ the index table carries each week's summary inline, so you can scan the
 whole regime arc without opening a single report. Each report analyzes a
 ~95-ETF universe against **SPY** on a 14-week relative-rotation lookback.
 
-### Reading the reports
+### Reading the reports online
 
-- **Start here:** [`report/weekly_summary.md`](report/weekly_summary.md) —
-  one row per week plus a multi-month regime-arc recap (sector-rotation
+The reports are published as styled HTML and served by **GitHub Pages** —
+the easiest way to read them is the live site:
+
+- **Report index:** <https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/report_index.html>
+  — every weekly report, one click to open.
+- **Latest report (example):** <https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/Relative_Rotation_Dashboard_ETFs_2026-11-20_analysis_report.html>
+- **Weekly roll-up:** <https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/weekly_summary.html>
+  — one row per week plus a multi-month regime-arc recap (sector-rotation
   leadership handoffs and inflection dates).
-- **Drill down:** `report/*_YYYY-MM-DD_analysis_report.md` — each dated
-  report contains the quadrant census, leadership regime, improving /
-  weakening trends, velocity rankings, structural laggards, actionable
-  portfolio tilts, and data caveats, with an analyst `> Read:` narrative
-  and `**Net call:**` per week.
+
+Every link in [`REPORT_INDEX.md`](REPORT_INDEX.md) and
+[`report/report_index.md`](report/report_index.md) opens the rendered
+page directly — no raw source, no setup.
+
+Each report page is fully interactive: a color-coded 2×2 quadrant census
+grid (green LEADING / red LAGGING), **click-to-sort tables** in every
+section, quadrant-crossing tables color-coded by destination (green =
+arriving at LEADING, red = falling into LAGGING), and bolded signal
+keywords throughout the analyst narrative.
+
+### What each report contains
+
+Each dated report (`report/*_YYYY-MM-DD_analysis_report.html`) covers the
+quadrant census, leadership regime, improving / weakening trends,
+quadrant crossings (with confirmed/provisional status and persistence),
+velocity rankings, structural laggards, actionable portfolio tilts, and
+data caveats — with an analyst `> Read:` narrative and a closing
+`**Net call:**` per week.
 
 ### How a report is produced (the workflow)
 
@@ -86,10 +106,16 @@ published here. The end-to-end flow:
    every dated report into the single `| Date | Weekly summary |` table
    with the regime-arc recap.
 
-5. **Publish** — the markdown reports are committed to `report/` in this
-   repo. A GitHub Action regenerates `REPORT_INDEX.md` on every push that
-   touches `report/`, merging each dated report's row with its weekly
-   summary — so the index stays current automatically.
+5. **Publish** — the enriched markdown is rendered to a styled,
+   interactive HTML page (`*_analysis_report.html`) at publish time and
+   committed to `report/` in this repo, where GitHub Pages serves it
+   verbatim (markdown stays the internal source of truth upstream; HTML
+   is the publish artifact). The two roll-ups — `weekly_summary.md` and
+   `report_index.md` — publish as markdown and render through Jekyll on
+   Pages. A GitHub Action regenerates `REPORT_INDEX.md` on every push
+   that touches `report/`, merging each dated report's row with its
+   weekly summary and linking to the rendered Pages URL — so the index
+   stays current automatically.
 
 ---
 
