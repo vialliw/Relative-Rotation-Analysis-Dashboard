@@ -1,6 +1,6 @@
 # RRA Report Index — ETF Dashboard vs SPY
 
-28 weekly reports, 2026-05-15 → 2026-11-20 (12-week lookback each). Regenerated on every pipeline run — do not edit by hand.
+29 weekly reports, 2026-05-15 → 2026-11-27 (12-week lookback each). Regenerated on every pipeline run — do not edit by hand.
 
 | Date | Report | Lead | Impr | Weak | Lag |
 |------|--------|------|------|------|-----|
@@ -32,3 +32,4 @@
 | 2026-11-06 | [Relative_Rotation_Dashboard_ETFs_2026-11-06_analysis_report.md](https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/Relative_Rotation_Dashboard_ETFs_2026-11-06_analysis_report.html) | 28 | 33 | 3 | 32 |
 | 2026-11-13 | [Relative_Rotation_Dashboard_ETFs_2026-11-13_analysis_report.md](https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/Relative_Rotation_Dashboard_ETFs_2026-11-13_analysis_report.html) | 31 | 29 | 5 | 31 |
 | 2026-11-20 | [Relative_Rotation_Dashboard_ETFs_2026-11-20_analysis_report.md](https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/Relative_Rotation_Dashboard_ETFs_2026-11-20_analysis_report.html) | 35 | 18 | 9 | 34 |
+| 2026-11-27 | [Relative_Rotation_Dashboard_ETFs_2026-11-27_analysis_report.md](https://vialliw.github.io/Relative-Rotation-Analysis-Dashboard/report/Relative_Rotation_Dashboard_ETFs_2026-11-27_analysis_report.html) | 35 | 19 | 7 | 35 |
